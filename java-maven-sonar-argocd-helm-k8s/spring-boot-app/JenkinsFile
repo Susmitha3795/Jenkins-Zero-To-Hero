@@ -19,6 +19,7 @@ stage('Check Java & Maven Versions') {
             echo $JAVA_HOME
         '''
     }
+}
     stage('Checkout') {
       steps {
         sh 'echo passed'
