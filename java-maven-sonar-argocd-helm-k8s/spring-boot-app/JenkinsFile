@@ -77,6 +77,12 @@ stage('Install Docker CLI') {
         }
       }
     }
+
+stage('Checkout') {
+    steps {
+        git branch: 'main', url: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero.git'
+    }
+}
     stage('Update Deployment File') {
         environment {
             GIT_REPO_NAME = "Jenkins-Zero-To-Hero"
