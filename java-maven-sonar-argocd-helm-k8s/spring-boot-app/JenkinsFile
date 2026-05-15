@@ -80,7 +80,7 @@ stage('Install Docker CLI') {
 
 stage('Checkout') {
     steps {
-        git branch: 'main', url: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero.git'
+        git branch: 'main', url: 'https://github.com/Susmitha3795/Jenkins-Zero-To-Hero'
     }
 }
     stage('Update Deployment File') {
