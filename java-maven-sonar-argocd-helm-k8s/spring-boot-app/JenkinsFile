@@ -98,3 +98,4 @@ stage('Static Code Analysis') {
     }
 }
 }
+}
