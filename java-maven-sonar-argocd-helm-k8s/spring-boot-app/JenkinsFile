@@ -56,6 +56,16 @@ stage('Static Code Analysis') {
     }
 }
 
+stage('Install Docker CLI') {
+    steps {
+        sh '''
+            apt-get update
+            apt-get install -y docker.io
+            docker --version
+        '''
+    }
+}
+
 
     stage('Build and Push Docker Image') {
       environment {
