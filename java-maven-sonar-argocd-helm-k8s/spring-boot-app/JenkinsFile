@@ -101,6 +101,8 @@ pipeline {
       dir("${WORKSPACE}/java-maven-sonar-argocd-helm-k8s") {
 
         sh '''
+          git config --global --add safe.directory /var/lib/jenkins/workspace/ultimate-demo
+
           pwd
           ls -la
 
@@ -119,8 +121,8 @@ pipeline {
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME}.git HEAD:main
         '''
       }
-}
-}
     }
   }
+}
+}
 }
