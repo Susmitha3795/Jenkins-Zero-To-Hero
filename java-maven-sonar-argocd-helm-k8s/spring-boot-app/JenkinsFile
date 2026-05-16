@@ -91,7 +91,7 @@ pipeline {
 
   environment {
     GIT_REPO_NAME = "Jenkins-Zero-To-Hero"
-    GIT_USER_NAME = "iam-veeramalla"
+    GIT_USER_NAME = "Susmitha3795"
   }
 
   steps {
